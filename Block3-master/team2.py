@@ -21,7 +21,7 @@ def move(my_history, their_history, my_score, their_score):
     # my_history: a string with one letter (c or b) per round that has been played with this opponent.
     # their_history: a string of the same length as history, possibly empty. 
     # The first round between these two players is my_history[0] and their_history[0].
-    # The most recent round is my_hisry[-1] and their_history[-1].
+    # The most recent round is my_history[-1] and their_history[-1].
     
     # Analyze my_history and their_history and/or my_score and their_score.
     # Decide whether to return 'c' or 'b'.
@@ -31,7 +31,7 @@ def move(my_history, their_history, my_score, their_score):
     
 def test_move(my_history, their_history, my_score, their_score, result):
     '''calls move(my_history, their_history, my_score, their_score)
-    from this module. Prints error if return value != result.
+    from this module. Prints error ieturn value != result.
     Returns True or False, dpending on whether result was as expected.
     '''
     real_result = move(my_history, their_history, my_score, their_score)
@@ -63,6 +63,6 @@ if __name__ == '__main__':
               # the simulation (if working correctly) would have awarded 
               # 300 to me and -750 to them. This test will pass if and only if
               # move('bbb', 'ccc', 0, 0) returns 'b'.
-              my_score=1, 
+              my_score=0, 
               their_score=0,
               result='b')             
