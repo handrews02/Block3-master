@@ -6,8 +6,8 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'The name the team gives to itself' # Only 10 chars displayed.
-strategy_name = 'The name the team gives to this strategy'
+team_name = 'camels' # Only 10 chars displayed.
+strategy_name = 'boom'
 strategy_description = 'How does this strategy decide?'
     
 def move(my_history, their_history, my_score, their_score):
@@ -31,7 +31,7 @@ def move(my_history, their_history, my_score, their_score):
     
 def test_move(my_history, their_history, my_score, their_score, result):
     '''calls move(my_history, their_history, my_score, their_score)
-    from this module. Prints error ieturn value != result.
+    from this module. Prints error if return value != result.
     Returns True or False, dpending on whether result was as expected.
     '''
     real_result = move(my_history, their_history, my_score, their_score)
